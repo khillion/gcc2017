@@ -7,6 +7,6 @@ def tostring(galaxyxml_object):
     return etree.tostring(galaxyxml_object.node)
 
 def export_parameter(parameter):
-    param = gxtp.DataParam(parameter.name, label=parameter.description,
+    param = gxtp.DataParam(parameter.name, label=parameter.label,
                            help=parameter.help)
     return param

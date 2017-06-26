@@ -1,8 +1,10 @@
 class Parameter(object):
     """
     """
-    def __init__(self, name, description=None, help=None):
+    def __init__(self, name, label=None, help=None):
+        # Galaxy: name; CWL: id
         self.name = name
-        # Galaxy: label, CWL: doc
-        self.description = description
-        self.help = None
+        # Galaxy and CWL have label
+        self.label = label
+        # Galaxy: help; CWL: doc
+        self.help = help

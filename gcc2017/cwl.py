@@ -8,6 +8,6 @@ def export(cwlgen_object):
 
 
 def export_parameter(parameter):
-    param = cwlgen.Parameter(parameter.name, label=parameter.description,
+    param = cwlgen.Parameter(parameter.name, label=parameter.label,
                              doc=parameter.help)
     return export(param)
