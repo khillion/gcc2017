@@ -1,1 +1,3 @@
 galaxyxml
+cwlgen
+
